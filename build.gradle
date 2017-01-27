@@ -11,14 +11,6 @@ dependencies {
     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.+'
 }
 
-task testCacheSuite(type: Test) {
-    // task to run a single JUnit test suite
-    systemProperty 'logback.configurationFile', 'logback.xml'
-    include '**/SuiteOfTests.class'
-    // testReportDir = file("${reporting.baseDir}/SuiteOfTests")
-    // testResultsDir = file("${buildDir}/test-results/SuiteOfTests")
-}
-
 repositories {
     mavenCentral()
 }

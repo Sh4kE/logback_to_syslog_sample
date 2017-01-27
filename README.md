@@ -8,7 +8,7 @@ This is a sample project for how to log via java's logback to syslog
 * You need to have gradle installed on your system
 
 # Usage
-You can simply clone and run it with `gradle run`, which should send a message to your local syslog server.
+You can simply clone and run it with `gradle run` or `gradle test`, which should send a message to your local syslog server.
 
 # Sample Configuration for syslog-ng
 

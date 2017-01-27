@@ -1,4 +1,7 @@
 apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'MyMain'
 
 dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'

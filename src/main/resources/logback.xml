@@ -1,0 +1,20 @@
+<configuration>
+  <appender name="SYSLOGNG" class="ch.qos.logback.classic.net.SyslogAppender">
+    <syslogHost>127.0.0.1</syslogHost>
+    <port>514</port>
+    <facility>LOCAL5</facility>
+    <suffixPattern>%thread: %-5level %logger{36} - %msg%n</suffixPattern>
+  </appender>
+
+  <root level="INFO">
+      <appender-ref ref="SYSLOGNG" />
+  </root> 
+
+  <logger name="syslogng" level="INFO">
+    <appender-ref ref="SYSLOGNG" />
+  </logger>
+
+  <logger name="junit" level="INFO">
+      <appender-ref ref="SYSLOGNG" />
+  </logger>    
+</configuration>
